@@ -418,15 +418,15 @@ export default function App() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <a href="#hero" className="flex items-center group focus:outline-none">
-            <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-12 w-auto object-contain" />
+            <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-20 sm:h-24 w-auto object-contain" />
           </a>
 
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden md:flex items-center space-x-1">
             {siteContent.menu.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-[#F59E0B] transition-colors rounded-md hover:bg-[#22242A]/50"
+                className="px-2 lg:px-3.5 py-2 text-xs lg:text-sm font-medium text-gray-300 hover:text-[#F59E0B] transition-colors rounded-md hover:bg-[#22242A]/50"
               >
                 {item.title}
               </a>
@@ -445,7 +445,7 @@ export default function App() {
 
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="lg:hidden p-2 rounded-lg bg-[#22242A] text-gray-200 hover:text-[#F59E0B] border border-[#32353E]"
+            className="md:hidden p-2 rounded-lg bg-[#22242A] text-gray-200 hover:text-[#F59E0B] border border-[#32353E]"
             aria-label="Menüyü Aç"
           >
             <Menu className="w-6 h-6" />
@@ -460,7 +460,7 @@ export default function App() {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 100 }}
-            className="fixed inset-0 z-50 lg:hidden flex flex-col bg-[#0F1012]/98 backdrop-blur-xl"
+            className="fixed inset-0 z-50 md:hidden flex flex-col bg-[#0F1012]/98 backdrop-blur-xl"
           >
             <div className="flex items-center justify-between p-4 border-b border-[#32353E]">
               <div className="flex items-center gap-2">
@@ -1277,7 +1277,7 @@ export default function App() {
             
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-center gap-3">
-                <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-12 w-auto object-contain" />
+                <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-20 sm:h-24 w-auto object-contain" />
               </div>
               <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
                 {siteContent.shortDescription} Yılların verdiği saha tecrübesiyle şantiyeniz için en hızlı çözümleri üretiyoruz.
