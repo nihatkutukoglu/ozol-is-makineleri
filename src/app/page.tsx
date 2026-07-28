@@ -385,6 +385,53 @@ export default function App() {
 
   return (
     <div className="bg-[#0F1012] text-gray-100 min-h-screen font-sans selection:bg-[#F59E0B] selection:text-[#0F1012] antialiased">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Özol İş Makineleri",
+            "image": "https://ozol-is-makineleri.vercel.app/logo.png",
+            "@id": "https://ozol-is-makineleri.vercel.app/#localbusiness",
+            "url": "https://ozol-is-makineleri.vercel.app",
+            "telephone": "+905366452442",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Ostim 100.Yıl Bulvarı 1242 Sokak No: 71",
+              "addressLocality": "Yenimahalle",
+              "addressRegion": "Ankara",
+              "postalCode": "06374",
+              "addressCountry": "TR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 39.9678,
+              "longitude": 32.7483
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:30",
+                "closes": "18:30"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:30",
+                "closes": "14:00"
+              }
+            ]
+          })
+        }}
+      />
       
       {/* 1. TOP BAR */}
       <div className="bg-[#18191C] border-b border-[#32353E]/60 text-xs text-gray-300 py-2.5 px-4 flex max-md:hidden">
