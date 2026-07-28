@@ -418,7 +418,7 @@ export default function App() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <a href="#hero" className="flex items-center group focus:outline-none">
-            <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-20 sm:h-24 w-auto object-contain" />
+            <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-16 md:h-20 w-auto object-contain" />
           </a>
 
           <nav className="hidden md:flex items-center space-x-1">
@@ -1277,7 +1277,7 @@ export default function App() {
             
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-center gap-3">
-                <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-20 sm:h-24 w-auto object-contain" />
+                <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-16 md:h-20 w-auto object-contain" />
               </div>
               <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
                 {siteContent.shortDescription} Yılların verdiği saha tecrübesiyle şantiyeniz için en hızlı çözümleri üretiyoruz.
