@@ -386,8 +386,8 @@ export default function App() {
     <div className="bg-[#0F1012] text-gray-100 min-h-screen font-sans selection:bg-[#F59E0B] selection:text-[#0F1012] antialiased">
       
       {/* 1. TOP BAR */}
-      <div className="bg-[#18191C] border-b border-[#32353E]/60 text-xs text-gray-300 py-2.5 px-4 hidden md:block">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="bg-[#18191C] border-b border-[#32353E]/60 text-xs text-gray-300 py-2.5 px-4 flex max-md:hidden">
+        <div className="max-w-7xl mx-auto flex justify-between items-center w-full">
           <div className="flex items-center space-x-6">
             <a href={`tel:${siteContent.contact.phoneRaw}`} className="flex items-center gap-2 hover:text-[#F59E0B] transition-colors">
               <Phone className="w-3.5 h-3.5 text-[#F59E0B]" />
@@ -421,7 +421,7 @@ export default function App() {
             <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-16 md:h-20 w-auto object-contain" />
           </a>
 
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="flex max-md:hidden items-center space-x-1">
             {siteContent.menu.map((item) => (
               <a
                 key={item.href}
@@ -433,7 +433,7 @@ export default function App() {
             ))}
           </nav>
 
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="flex max-sm:hidden items-center gap-3">
             <a
               href="#teklif-al"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#F59E0B] hover:bg-[#D97706] text-[#0F1012] font-bold text-sm transition-all duration-200 shadow-md shadow-[#F59E0B]/10"
@@ -445,7 +445,7 @@ export default function App() {
 
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="md:hidden p-2 rounded-lg bg-[#22242A] text-gray-200 hover:text-[#F59E0B] border border-[#32353E]"
+            className="hidden max-md:flex p-2 rounded-lg bg-[#22242A] text-gray-200 hover:text-[#F59E0B] border border-[#32353E]"
             aria-label="Menüyü Aç"
           >
             <Menu className="w-6 h-6" />
