@@ -95,7 +95,7 @@ const siteContent = {
       id: "p3",
       title: "Hidrolik Sistem Parçaları",
       description: "Hidrolik pompalar, ana kontrol valfleri, silindirler ve hidromotorlar.",
-      image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80",
+      image: "/images/hydraulic.png",
       items: ["Ana Hidrolik Pompalar", "Kule Dönüş Motorları", "Yürüyüş Hidromotorları", "Kumanda Valf Blokları", "Silindir Sızdırmazlık Elemanları"],
       features: ["350+ Bar Basınç Dayanımı", "Sızdırmazlık Garantisi", "Debi Testli Ürünler"]
     },
