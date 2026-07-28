@@ -145,10 +145,11 @@ const siteContent = {
     { id: "b2", name: "Komatsu", tagline: "Ekskavatör & Dozer" },
     { id: "b3", name: "Volvo", tagline: "Yükleyici & Kamyon" },
     { id: "b4", name: "Hitachi", tagline: "Hidrolik Sistemler" },
-    { id: "b5", name: "Hyundai", tagline: "Revizyon Parçaları" },
-    { id: "b6", name: "JCB", tagline: "Bekoloder Grupları" },
-    { id: "b7", name: "Doosan", tagline: "Ağır İş Makineleri" },
-    { id: "b8", name: "Liebherr", tagline: "Vinç ve Paletli Grup" }
+    { id: "b5", name: "Kawasaki", tagline: "Loder Uyumlu Parçalar" },
+    { id: "b6", name: "Hyundai", tagline: "Revizyon Parçaları" },
+    { id: "b7", name: "JCB", tagline: "Bekoloder Grupları" },
+    { id: "b8", name: "Doosan", tagline: "Ağır İş Makineleri" },
+    { id: "b9", name: "Liebherr", tagline: "Vinç ve Paletli Grup" }
   ],
   whyUs: [
     {
@@ -243,7 +244,7 @@ const siteContent = {
     {
       id: "faq-1",
       question: "Hangi iş makineleri ve markalar için yedek parça sağlıyorsunuz?",
-      answer: "Caterpillar, Komatsu, Volvo, Hitachi, JCB, Hyundai, Doosan ve Liebherr başta olmak üzere paletli/lastikli ekskavatörler, loderler, bekoloderler, dozerler ve greyderler için geniş bir yedek parça stoku sunuyoruz."
+      answer: "Caterpillar, Komatsu, Volvo, Hitachi, Kawasaki, JCB, Hyundai, Doosan ve Liebherr başta olmak üzere paletli/lastikli ekskavatörler, loderler, bekoloderler, dozerler ve greyderler için geniş bir yedek parça stoku sunuyoruz."
     },
     {
       id: "faq-2",
@@ -386,7 +387,7 @@ export default function App() {
     <div className="bg-[#0F1012] text-gray-100 min-h-screen font-sans selection:bg-[#F59E0B] selection:text-[#0F1012] antialiased">
       
       {/* 1. TOP BAR */}
-      <div className="bg-[#18191C] border-b border-[#32353E]/60 text-xs text-gray-300 py-2.5 px-4 hidden md:block">
+      <div className="bg-[#18191C] border-b border-[#32353E]/60 text-xs text-gray-300 py-2.5 px-4 flex max-md:hidden">
         <div className="max-w-7xl mx-auto flex justify-between items-center w-full">
           <div className="flex items-center space-x-6">
             <a href={`tel:${siteContent.contact.phoneRaw}`} className="flex items-center gap-2 hover:text-[#F59E0B] transition-colors">
@@ -421,7 +422,7 @@ export default function App() {
             <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-16 md:h-20 w-auto object-contain" />
           </a>
 
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="flex max-md:hidden items-center space-x-1">
             {siteContent.menu.map((item) => (
               <a
                 key={item.href}
@@ -433,7 +434,7 @@ export default function App() {
             ))}
           </nav>
 
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="flex max-sm:hidden items-center gap-3">
             <a
               href="#teklif-al"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#F59E0B] hover:bg-[#D97706] text-[#0F1012] font-bold text-sm transition-all duration-200 shadow-md shadow-[#F59E0B]/10"
@@ -824,7 +825,7 @@ export default function App() {
             description="Aşağıdaki markaların iş makinelerine %100 uyumlu orijinal ve yüksek kaliteli muadil parçalar sunuyoruz."
           />
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-6">
             {siteContent.brands.map((brand) => (
               <div
                 key={brand.id}
