@@ -417,18 +417,8 @@ export default function App() {
         isScrolled ? 'bg-[#0F1012]/95 backdrop-blur-md border-b border-[#32353E] py-3.5 shadow-2xl' : 'bg-[#0F1012]/80 backdrop-blur-sm border-b border-[#32353E]/40 py-5'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <a href="#hero" className="flex items-center gap-3 group focus:outline-none">
-            <div className="w-10 h-10 rounded-lg bg-[#F59E0B] flex items-center justify-center text-[#0F1012] font-black shadow-lg shadow-[#F59E0B]/20 group-hover:bg-[#D97706] transition-colors">
-              <Wrench className="w-5 h-5 stroke-[2.5]" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-tight text-white uppercase leading-tight">
-                ÖZOL <span className="text-[#F59E0B]">İŞ MAKİNELERİ</span>
-              </span>
-              <span className="text-[10px] text-gray-400 font-medium tracking-widest uppercase">
-                Yedek Parça Tedarik
-              </span>
-            </div>
+          <a href="#hero" className="flex items-center group focus:outline-none">
+            <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-12 w-auto object-contain" />
           </a>
 
           <nav className="hidden lg:flex items-center space-x-1">
@@ -1287,12 +1277,7 @@ export default function App() {
             
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded bg-[#F59E0B] flex items-center justify-center text-[#0F1012] font-black">
-                  <Wrench className="w-5 h-5" />
-                </div>
-                <span className="text-xl font-black text-white uppercase tracking-tight">
-                  ÖZOL <span className="text-[#F59E0B]">İŞ MAKİNELERİ</span>
-                </span>
+                <img src="/logo.png" alt="Özol İş Makineleri Logo" className="h-12 w-auto object-contain" />
               </div>
               <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
                 {siteContent.shortDescription} Yılların verdiği saha tecrübesiyle şantiyeniz için en hızlı çözümleri üretiyoruz.
